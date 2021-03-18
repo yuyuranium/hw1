@@ -20,8 +20,7 @@ body {
   align-items: center;
   height: 90%;
   width: 100%;
-  top: 0;
-  left: 0;
+  min-width: 70em;
   padding: 0;
   margin: 0;
 }
@@ -47,28 +46,31 @@ h2 {
 li {
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  margin: 14px 16px;
   font-size: 14pt;
   letter-spacing: 3px;
   font-family: PingFangTC-Medium;
+  min-width: fit-content;
+  cursor: pointer;
+}
+
+li:hover {
+  font-weight: bolder;
 }
 
 .slogan {
   text-align: center;
 }
-
-.discription {
-  text-align: center;
-  color: #999999;
+.discription { text-align: center;
+   color: #999999;
   font-size: 19pt;
   font-family: PingFangTC;
   letter-spacing: 3px;
+  margin: 1em 0 0 0;
 }
 
 #navbar, #textbox, #slides, #below {
   width: 100%;
-  min-width: 50em;
-
 }
 
 #navbar {
@@ -81,12 +83,14 @@ li {
   padding: 0;
   overflow: hidden;
   background-color: #ffcc99;
+  min-width: 70em;
 }
 
 #menu {
   display: flex;
   min-width: 40em;
-  margin: 0 5% 0 0;
+  margin: 0 0 0 0;
+  padding: 0 5%;
 }
 
 #logo {
@@ -97,11 +101,15 @@ li {
   background-size: contain;
   width: 7em;
   height: 3.1em;
+  min-width: 7em;
+  min-height: auto;
   margin: 1px 5%;
+  cursor: pointer;
 }
 
 #textbox {
-  margin-top: 3em;
+  margin-top: 5em;
+  min-width: 45em;
 }
 
 #login-button {
@@ -117,6 +125,8 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 0 5em 0;
+  min-width: 45em;
 }
 
 #slides {
@@ -124,7 +134,14 @@ li {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  margin: 1em 0 2em 0;
+}
+
+#carouselExampleSlidesOnly {
+  margin: 1em 0 1em 0;
+}
+
+.carousel-item {
+  padding: 1em 0 1em 0;
 }
 
 .example-img {
@@ -135,6 +152,11 @@ li {
   width: 250px;
   height: 250px;
   margin: 9px;
+}
+
+.example-img:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #s0 {
@@ -158,9 +180,14 @@ li {
   align-items: center;
   font-size: 22pt;
   font-family: PingFangTC-Medium;
-  padding: 8px 24px;
+  padding: 8px 20px;
   border-radius: 30px;
   background-color: #99cccc;
   color: #ffffff;
   letter-spacing: 3px;
+  cursor: pointer;
+}
+
+#use-button:hover {
+  background-color: #99cccca8;
 }

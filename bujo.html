@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bujo!</title>
-    <link href="bujo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <title>Bujo!</title>
+    <link rel="stylesheet" href="bujo.css">
   </head>
 
   <body>
     <div id="navbar">
-      <div id="logo"></div>
+      <div id="logo"><a href="https://luffy.ee.ncku.edu.tw/~yuyu/hw1/bujo"></a></div>
       <div id="menu">
         <li>電子手帳</li>
         <li>手帳素材</li>
@@ -28,14 +28,42 @@
         並提供客製化服務，做手帳不再困難！
       </p>
     </div>
-    <div id="slides">
-      <div class=example-img id="s0"></div>
-      <div class=example-img id="s1"></div>
-      <div class=example-img id="s2"></div>
-      <div class=example-img id="s3"></div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="slides">
+            <div class=example-img id="s0"></div>
+            <div class=example-img id="s1"></div>
+            <div class=example-img id="s2"></div>
+            <div class=example-img id="s3"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="slides">
+            <div class=example-img id="s3"></div>
+            <div class=example-img id="s0"></div>
+            <div class=example-img id="s2"></div>
+            <div class=example-img id="s1"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div id="slides">
+            <div class=example-img id="s2"></div>
+            <div class=example-img id="s3"></div>
+            <div class=example-img id="s1"></div>
+            <div class=example-img id="s0"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="below">
       <div id="use-button">立即使用→</div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./bujo.js"></script>
+    
   </body>
 </html>
